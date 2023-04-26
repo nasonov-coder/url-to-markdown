@@ -1,0 +1,8 @@
+pre.hljs code {
+    display: block;
+    overflow-x: auto;
+    padding: 1em;
+}
+pre.hljs {
+    border-radius: 4px;
+}
