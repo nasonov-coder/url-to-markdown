@@ -14,6 +14,19 @@ var md = require('markdown-it')({
   //   return '<pre class="hljs"><code>' + md.utils.escapeHtml(str) + '</code></pre>';
   // }
 });
-document.getElementById('rendered-md').innerHTML = md.render((new URLSearchParams(window.location.search)).get('text'));
+
+// Decode the base64-encoded value
+const value = (new URLSearchParams(window.location.search)).get('text') || (()=>{
+  const base64Param = (new URLSearchParams(window.location.search)).get('base64');
+  console.log(base64Param)
+  const atob = window.atob(base64Param)
+  console.log(atob)
+  const escape = window.escape(atob);
+  console.log(escape)
+  const decodeURIComponent = window.decodeURIComponent(escape);
+  console.log(decodeURIComponent)
+  return decodeURIComponent
+})()
+document.getElementById('rendered-md').innerHTML = md.render(value);
 
 hljs.highlightAll();
