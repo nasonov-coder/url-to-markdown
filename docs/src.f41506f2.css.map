@@ -1,1 +1,0 @@
-{"version":3,"sources":["src/index.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"src.f41506f2.css","sourceRoot":"..","sourcesContent":["pre.hljs code {\n    display: block;\n    overflow-x: auto;\n    padding: 1em;\n}\npre.hljs {\n    border-radius: 4px;\n}"]}

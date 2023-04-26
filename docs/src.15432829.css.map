@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,cACI,aAAc,CACd,eAAgB,CAChB,WACJ,CACA,SACI,iBACJ","file":"src.15432829.css","sourceRoot":"..","sourcesContent":["pre.hljs code {\n    display: block;\n    overflow-x: auto;\n    padding: 1em;\n}\npre.hljs {\n    border-radius: 4px;\n}"]}
